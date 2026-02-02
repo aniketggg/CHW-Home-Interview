@@ -1,9 +1,9 @@
 {
   "name": "default_ruleset",
   "variables": [
-    "fast_breathing",
     "danger_sign",
     "chest_indrawing",
+    "fast_breathing",
     "stridor"
   ],
   "rules": [

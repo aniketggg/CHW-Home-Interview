@@ -6,6 +6,7 @@ from compiler import compile_manual_to_ruleset
 
 def run_project():
     MANUAL_PATH = 'sample_manual_excerpt.jsonl'
+    #MANUAL_PATH = 'test_lint.jsonl'
     PATIENTS_PATH = 'sample_patients.jsonl'
     ORIGINAL_RULESET_PATH = 'sample_ruleset.json' # Used for Mermaid generation
     
@@ -27,6 +28,13 @@ def run_project():
     interpreter = DMNInterpreter('reconstructed_ruleset.json')
     results = []
 
+    #running lint mode:
+    print("Running lint mode:")
+    lint_warnings = interpreter.lint()
+    print("\n")
+    
+    #running patient mode:
+    print("Running patient mode:")
     if not os.path.exists(PATIENTS_PATH):
         print(f"Error: Patients file not found at {PATIENTS_PATH}")
         return
