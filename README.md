@@ -14,10 +14,10 @@ It digitizes paper-based clinical manuals by converting plain-language medical g
   Execution engine. Handles boolean expression parsing (`AND`, `OR`, `NOT`, parentheses) and implements DMN-style *fall-through semantics* where the first matching rule wins. Also includes **Lint Mode** logic to highlight potential unreachable rules.
 
 - **`mermaid.py`**  
-  Emitter module. Translates the internal ruleset into a `flowchart TD` Mermaid diagram for visual validation.
+  Translates the ruleset into a `flowchart TD` Mermaid diagram for visual validation.
 
 - **`main.py`**  
-  Orchestrator. Runs the end-to-end pipeline: rule extraction, visualization, clinical linting, and patient evaluation.
+  Runs the end-to-end pipeline in the following order: rule extraction from manual excerpt, visualization with mermaid diagram, linting, and patient evaluation.
 
 - **`test_interpreter.py`**  
   Automated test suite verifying logic correctness and safety-focused error handling.
@@ -26,7 +26,7 @@ It digitizes paper-based clinical manuals by converting plain-language medical g
 
 ## Setup & Requirements
 
-- **Python 3.9+**
+- **Python 3.6+** (any version 3.6 or later should work, I used Python 3.8.10)
 - **Dependencies:**  
   Uses only Python standard libraries (`json`, `re`, `unittest`) for zero-dependency portability
 
