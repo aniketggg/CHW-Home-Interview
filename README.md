@@ -81,6 +81,8 @@ The project includes a **Lint Mode** designed to detect logical inconsistencies 
 - **Subset Shadowing**  
   Specific rules (e.g., `A AND B`) placed after broader rules (e.g., `A`).
 
+---
+
 ### Testing the Linter
 
 To test linting behavior, point `MANUAL_PATH` in `main.py` to `test_lint.jsonl`.  
