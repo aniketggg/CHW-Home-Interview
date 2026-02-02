@@ -11,7 +11,7 @@ It digitizes paper-based clinical manuals by converting plain-language medical g
   Rule Extraction component. Parses clinical manual text into structured JSON and maps each rule to a `chunk_id` for traceability.
 
 - **`interpreter.py`**  
-  Execution engine. Handles boolean expression parsing (`AND`, `OR`, `NOT`, parentheses) and implements DMN-style *fall-through semantics* where the first matching rule wins. Also includes consolidated **Lint Mode** logic.
+  Execution engine. Handles boolean expression parsing (`AND`, `OR`, `NOT`, parentheses) and implements DMN-style *fall-through semantics* where the first matching rule wins. Also includes **Lint Mode** logic to highlight potential unreachable rules.
 
 - **`mermaid.py`**  
   Emitter module. Translates the internal ruleset into a `flowchart TD` Mermaid diagram for visual validation.
