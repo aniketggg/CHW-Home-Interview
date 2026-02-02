@@ -3,8 +3,8 @@
   "variables": [
     "danger_sign",
     "chest_indrawing",
-    "fast_breathing",
-    "stridor"
+    "stridor",
+    "fast_breathing"
   ],
   "rules": [
     {

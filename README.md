@@ -68,9 +68,9 @@ This test suite verifies:
 
 ---
 
-## Optional Bonus: Clinical Lint Mode
+## Optional Bonus: Lint Mode
 
-The project includes a **Lint Mode** designed to detect logical inconsistencies in clinical manuals *before* deployment. It identifies:
+The project includes a **Lint Mode** designed to detect logical inconsistencies in clinical manuals before it goes through the patient data. Currently, the function checks for:
 
 - **Unreachable Rules**  
   Rules placed after a catch-all (`true`) condition.
@@ -94,7 +94,7 @@ This sample intentionally includes logical errors:
 
 ---
 
-## Requirement Fulfillment
+## All Requirements Completed
 
 DMN Semantics: Top-to-bottom evaluation; first match wins 
 Expression Language: AND, OR, NOT, parentheses, bare variables 
