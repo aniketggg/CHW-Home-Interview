@@ -1,0 +1,11 @@
+flowchart TD
+   Start(Start) --> R1
+    R1{R1: danger_sign}
+    R1 -- Yes --> R1_OUT[SEVERE]
+    R1 -- No --> R2
+    R2{R2: chest_indrawing OR stridor}
+    R2 -- Yes --> R2_OUT[SEVERE]
+    R2 -- No --> R3
+    R3{R3: fast_breathing}
+    R3 -- Yes --> R3_OUT[PNEUMONIA]
+    R3 -- No --> Default[COUGH_NO_PNEUMONIA]
